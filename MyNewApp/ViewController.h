@@ -11,6 +11,11 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIButton *myButton;
+@property (strong, nonatomic) IBOutlet UILabel *myText;
+
+@property (nonatomic) int number;
+
+- (IBAction)setTitleLabel:(id)sender;
 
 @end
 

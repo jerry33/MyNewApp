@@ -24,22 +24,37 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="177" y="385" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="setTitleLabel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h6J-Rx-1Zi"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbM-N9-CFe">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="271" width="359" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="C0D-A4-6bT"/>
+                                <exclude reference="TbM-N9-CFe"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="C0D-A4-6bT"/>
+                                <include reference="TbM-N9-CFe"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="myButton" destination="C0D-A4-6bT" id="xgt-dd-Rgb"/>
+                        <outlet property="myButton" destination="C0D-A4-6bT" id="Dew-gn-ztb"/>
+                        <outlet property="myText" destination="TbM-N9-CFe" id="S0t-rF-UAh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
